@@ -40,6 +40,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </footer>
         <CookieBanner />
 
+        {/* Google AdSense */}
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8643026289824701"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7B124V9DV4"

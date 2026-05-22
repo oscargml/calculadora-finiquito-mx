@@ -46,12 +46,7 @@ export default function Home() {
         <CalculadoraLaboral />
       </section>
 
-      {/* AdSense placeholder — replace with real ad unit after approval */}
-      <div className="max-w-5xl mx-auto px-4 mb-6">
-        <div className="bg-gray-100 border border-dashed border-gray-300 rounded-xl h-24 flex items-center justify-center text-gray-400 text-sm">
-          Anuncio — Google AdSense
-        </div>
-      </div>
+      {/* AdSense Auto Ads — Google places ads automatically once approved */}
 
       {/* SEO Educational Content */}
       <section className="max-w-4xl mx-auto px-4 pb-16 text-gray-700 leading-relaxed space-y-8">
