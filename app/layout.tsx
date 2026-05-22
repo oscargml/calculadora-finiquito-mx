@@ -8,6 +8,9 @@ const geist = Geist({ variable: '--font-geist', subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Calculadora Finiquito y Liquidación México 2026',
   description: 'Calcula tus prestaciones laborales en México conforme a la LFT 2026.',
+  verification: {
+    google: '9QOIEw9h8EQXwTxGcS2FIAtMZrvIJyc009PzXOQULjg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
