@@ -19,6 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${geist.variable} h-full antialiased`}>
       <head>
         <link rel="alternate" hrefLang="es-mx" href="/" />
+        {/* Google AdSense — must be in <head> for crawler detection */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8643026289824701"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-full flex flex-col bg-gray-50">
         <div className="flex-1">{children}</div>
@@ -39,13 +45,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         <CookieBanner />
-
-        {/* Google AdSense */}
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8643026289824701"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
 
         {/* Google Analytics */}
         <Script
