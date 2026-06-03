@@ -45,7 +45,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         <CookieBanner />
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Calculadora de Finiquito y Liquidación México 2026 (LFT)',
+  description: 'Calcula gratis tu finiquito o liquidación laboral en México según la Ley Federal del Trabajo. Consulta cuánto te corresponde por renuncia o despido.',
+  alternates: {
+    canonical: 'https://calculadorafiniquitomx.xyz/',
+  },
+};
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7B124V9DV4"
