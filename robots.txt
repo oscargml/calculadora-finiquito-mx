@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap placement
+Sitemap: https://calculadorafiniquitomx.xyz/sitemap.xml
