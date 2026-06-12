@@ -57,7 +57,7 @@ export default function Privacidad() {
           <p>
             Conforme a la Ley Federal de Protección de Datos Personales en Posesión de los
             Particulares, puedes ejercer tus derechos ARCO enviando un correo a
-            contacto@calculadorafiniquito.mx.
+            oscargml@gmail.com.
           </p>
         </div>
 

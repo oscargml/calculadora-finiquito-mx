@@ -46,39 +46,23 @@ export default function Home() {
         <CalculadoraLaboral />
       </section>
 
-      {/* AdSense Auto Ads — Google places ads automatically once approved */}
-export default function Page() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Calculadora de Finiquito y Liquidación México",
-    "url": "https://calculadorafiniquitomx.xyz/",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "All",
-    "browserRequirements": "Requires HTML5",
-    "description": "Calculadora gratuita y en línea para calcular el finiquito y la liquidación laboral en México según la Ley Federal del Trabajo (LFT).",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "MXN"
-    }
-  };
-
-  return (
-    <>
-      {/* Injecting Schema */}
+      {/* Schema.org structured data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebApplication',
+            name: 'Calculadora de Finiquito y Liquidación México',
+            applicationCategory: 'BusinessApplication',
+            operatingSystem: 'All',
+            description:
+              'Calculadora gratuita y en línea para calcular el finiquito y la liquidación laboral en México según la Ley Federal del Trabajo (LFT).',
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'MXN' },
+          }),
+        }}
       />
-      
-      {/* Your actual calculator UI components go here */}
-      <main>
-        {/* ... */}
-      </main>
-    </>
-  );
-}
+
       {/* SEO Educational Content */}
       <section className="max-w-4xl mx-auto px-4 pb-16 text-gray-700 leading-relaxed space-y-8">
         <hr className="border-gray-200" />

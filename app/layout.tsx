@@ -7,8 +7,12 @@ import CookieBanner from '@/components/CookieBanner';
 const geist = Geist({ variable: '--font-geist', subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://calculadorafiniquitomx.xyz'),
   title: 'Calculadora Finiquito y Liquidación México 2026',
   description: 'Calcula tus prestaciones laborales en México conforme a la LFT 2026.',
+  alternates: {
+    canonical: '/',
+  },
   verification: {
     google: '9QOIEw9h8EQXwTxGcS2FIAtMZrvIJyc009PzXOQULjg',
   },
@@ -30,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex-1">{children}</div>
         <footer className="bg-gray-800 text-gray-400 text-sm py-6 px-4">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between gap-3">
-            <p>© {new Date().getFullYear()} CalculadoraFiniquito.mx — Herramienta informativa</p>
+            <p>© {new Date().getFullYear()} CalculadoraFiniquitoMX.xyz — Herramienta informativa</p>
             <nav className="flex gap-4">
               <a href="/privacidad" className="hover:text-white transition-colors">
                 Privacidad
@@ -45,15 +49,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         <CookieBanner />
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Calculadora de Finiquito y Liquidación México 2026 (LFT)',
-  description: 'Calcula gratis tu finiquito o liquidación laboral en México según la Ley Federal del Trabajo. Consulta cuánto te corresponde por renuncia o despido.',
-  alternates: {
-    canonical: 'https://calculadorafiniquitomx.xyz/',
-  },
-};
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7B124V9DV4"

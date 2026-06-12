@@ -14,8 +14,8 @@ export default function Contacto() {
       <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm text-sm space-y-4">
         <div>
           <p className="font-semibold text-gray-900">Correo electrónico</p>
-          <a href="mailto:contacto@calculadorafiniquito.mx" className="text-blue-600 underline">
-            contacto@calculadorafiniquito.mx
+          <a href="mailto:oscargml@gmail.com" className="text-blue-600 underline">
+            oscargml@gmail.com
           </a>
         </div>
         <div>
