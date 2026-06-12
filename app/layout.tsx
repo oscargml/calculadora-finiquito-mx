@@ -3,11 +3,13 @@ import { Geist } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import CookieBanner from '@/components/CookieBanner';
+import SiteNav from '@/components/SiteNav';
+import { SITE_URL } from '@/lib/site';
 
 const geist = Geist({ variable: '--font-geist', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://calculadorafiniquitomx.xyz'),
+  metadataBase: new URL(SITE_URL),
   title: 'Calculadora Finiquito y Liquidación México 2026',
   description: 'Calcula tus prestaciones laborales en México conforme a la LFT 2026.',
   alternates: {
@@ -31,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-full flex flex-col bg-gray-50">
+        <SiteNav />
         <div className="flex-1">{children}</div>
         <footer className="bg-gray-800 text-gray-400 text-sm py-6 px-4">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between gap-3">
