@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex-1">{children}</div>
         <footer className="bg-gray-800 text-gray-400 text-sm py-6 px-4">
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between gap-3">
-            <p>© {new Date().getFullYear()} CalculadoraFiniquitoMX.xyz — Herramienta informativa</p>
+            <p>© {new Date().getFullYear()} CalculadoraLaboralMX.com — Herramienta informativa</p>
             <nav className="flex gap-4">
               <a href="/privacidad" className="hover:text-white transition-colors">
                 Privacidad

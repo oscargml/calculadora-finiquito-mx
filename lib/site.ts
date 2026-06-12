@@ -1,7 +1,7 @@
 /**
  * Single source of truth for the canonical domain.
- * When the .mx domain is purchased, change SITE_URL here and redeploy —
- * sitemap, canonicals and JSON-LD all derive from it.
+ * Sitemap, canonicals and JSON-LD all derive from it.
+ * The old calculadorafiniquitomx.xyz 301-redirects here (see next.config.ts).
  */
-export const SITE_URL = 'https://calculadorafiniquitomx.xyz';
-export const SITE_NAME = 'Calculadoras Laborales México';
+export const SITE_URL = 'https://calculadoralaboralmx.com';
+export const SITE_NAME = 'Calculadora Laboral MX';

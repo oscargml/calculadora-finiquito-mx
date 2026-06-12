@@ -1,6 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      // 301 the old .xyz domain to the canonical .com so SEO equity transfers
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "calculadorafiniquitomx.xyz" }],
+        destination: "https://calculadoralaboralmx.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
