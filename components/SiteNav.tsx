@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 const links = [
   { href: '/', label: 'Finiquito' },
+  { href: '/aguinaldo', label: 'Aguinaldo' },
   { href: '/incapacidad', label: 'Incapacidad' },
   { href: '/hipoteca', label: 'Hipoteca' },
   { href: '/guias', label: 'Guías' },
